@@ -49,7 +49,7 @@ public:
     }
   }
 
-  void init(uint32_t capacity) throw (OutOfMemoryException) {
+  void init(uint32_t capacity) /*throw (OutOfMemoryException)*/ {
     if (capacity > _capacity) {
       if (NULL != _base) {
         free(_base);
