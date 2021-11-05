@@ -40,7 +40,7 @@ KVIterator * PartitionBucket::getIterator() {
 }
 
 void PartitionBucket::spill(IFileWriter * writer)
-  throw(IOException, UnsupportException) {
+  /*throw(IOException, UnsupportException)*/ {
   KVIterator * iterator = getIterator();
   if (NULL == iterator || NULL == writer) {
     return;
